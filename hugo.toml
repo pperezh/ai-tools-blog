@@ -1,0 +1,92 @@
+baseURL = "https://ai-tools.pperezh.com/"
+defaultContentLanguage = "en"
+theme = "blowfish"
+
+# Global Parameters (Shared across all languages)
+[params]
+  colorScheme = "blowfish"
+  logo = "img/logo.png"
+  defaultAppearance = "light" # Force light mode for consistency
+  enableSearch = true
+  disableTextInHeader = false
+
+  [params.header]
+    layout = "basic"
+
+  [params.footer]
+    showCopyright = true
+    showPoweredBy = false
+
+  [params.homepage]
+    layout = "list" # Simple listing of posts
+    showRecent = true
+    recentLimit = 10
+
+[languages]
+  # --- English Configuration ---
+  [languages.en]
+    languageName = "English"
+    languageCode = "en-us"
+    weight = 1
+    title = "AI Tools - Patricio Pérez-Henríquez"
+
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "home"
+        name = "Back to Main Site"
+        url = "https://pperezh.github.io/"
+        weight = 10
+      [[languages.en.menu.main]]
+        identifier = "ai-tools"
+        name = "AI Tools"
+        url = "/"
+        weight = 20
+
+    [languages.en.params]
+      displayName = "🇺🇸 EN"
+
+    [languages.en.params.author]
+      name = "Patricio Pérez-Henríquez"
+      image = "img/me.jpg"
+      headline = "Curated reviews and comparisons of AI tools for research workflows."
+      links = [
+        { "email" = "mailto:patricio@pperezh.com" },
+        { "github" = "https://github.com/pperezh" },
+        { "linkedin" = "https://www.linkedin.com/in/patricioperezhenriquez/" }
+      ]
+
+  # --- Spanish Configuration ---
+  [languages.es]
+    languageName = "Español"
+    languageCode = "es-cl"
+    weight = 2
+    title = "Herramientas IA - Patricio Pérez-Henríquez"
+
+    [languages.es.menu]
+      [[languages.es.menu.main]]
+        identifier = "home"
+        name = "Volver al Sitio Principal"
+        url = "https://pperezh.github.io/es/"
+        weight = 10
+      [[languages.es.menu.main]]
+        identifier = "ai-tools"
+        name = "Herramientas IA"
+        url = "/es/"
+        weight = 20
+
+    [languages.es.params]
+      displayName = "🇨🇱 ES"
+
+    [languages.es.params.author]
+      name = "Patricio Pérez-Henríquez"
+      image = "img/me.jpg"
+      headline = "Revisiones y comparaciones de herramientas de IA para flujos de investigación."
+      links = [
+        { "email" = "mailto:patricio@pperezh.com" },
+        { "github" = "https://github.com/pperezh" },
+        { "linkedin" = "https://www.linkedin.com/in/patricioperezhenriquez/" }
+      ]
+
+# Allow raw HTML inside Markdown files
+[markup.goldmark.renderer]
+  unsafe = true
