@@ -11,46 +11,7 @@ The best source for this is Scite, a paid service that not only counts citations
 The ranking below compares seven available MCP servers across citation quality, coverage, and workflow fit, with notes on what to pair with what.
 I have tried some of them and find them useful for different purposes.I'd genuinely like to hear what has worked for you.[patricio@pperezh.com](mailto:patricio@pperezh.com).
 
-<style>
-.tt { width: 100%; border-collapse: collapse; font-size: 13px; table-layout: fixed; }
-.tt th { font-size: 11px; font-weight: 500; color: #6b7280; text-align: left; padding: 6px 8px; border-bottom: 0.5px solid #e5e7eb; }
-.tt td { padding: 8px; border-bottom: 0.5px solid #e5e7eb; vertical-align: top; }
-.tt tr:last-child td { border-bottom: none; }
-.tt tr.data-row:hover td { background: #f9fafb; }
-.rk { font-size: 15px; font-weight: 500; width: 24px; text-align: center; }
-.nm { font-weight: 500; font-size: 13px; }
-.nm a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
-.sb { font-size: 11px; color: #6b7280; margin-top: 2px; }
-.badge { display: inline-block; font-size: 11px; padding: 2px 6px; border-radius: 4px; margin: 1px 1px 1px 0; white-space: nowrap; }
-.bg { background: #EAF3DE; color: #3B6D11; }
-.ba { background: #FAEEDA; color: #854F0B; }
-.br { background: #FCEBEB; color: #A32D2D; }
-.bb { background: #E6F1FB; color: #185FA5; }
-.bgy { background: #F1EFE8; color: #5F5E5A; }
-.bp { background: #EEEDFE; color: #3C3489; }
-.bar-wrap { display: flex; align-items: center; gap: 6px; }
-.bar-bg { flex: 1; height: 5px; background: #e5e7eb; border-radius: 3px; min-width: 40px; }
-.bar-fill { height: 5px; border-radius: 3px; }
-.bar-teal { background: #1D9E75; }
-.bar-amber { background: #BA7517; }
-.sc { font-size: 12px; color: #6b7280; min-width: 28px; }
-.sl { font-size: 11px; font-weight: 500; color: #6b7280; padding: 10px 8px 4px; letter-spacing: 0.04em; text-transform: uppercase; }
-.paid-row td { opacity: 0.85; }
-.out-row td { opacity: 0.7; }
-.dark .tt th { color: #9ca3af; border-bottom-color: #374151; }
-.dark .tt td { border-bottom-color: #374151; }
-.dark .tt tr.data-row:hover td { background: #1f2937; }
-.dark .sb { color: #9ca3af; }
-.dark .sc { color: #9ca3af; }
-.dark .sl { color: #9ca3af; }
-.dark .bar-bg { background: #374151; }
-.dark .bg { background: #27500A; color: #C0DD97; }
-.dark .ba { background: #633806; color: #FAC775; }
-.dark .br { background: #791F1F; color: #F7C1C1; }
-.dark .bb { background: #0C447C; color: #B5D4F4; }
-.dark .bgy { background: #444441; color: #D3D1C7; }
-.dark .bp { background: #3C3489; color: #CECBF6; }
-</style>
+
 <div style="padding: 0.75rem 0 1rem; overflow-x: auto;">
 <table class="tt">
 <colgroup>

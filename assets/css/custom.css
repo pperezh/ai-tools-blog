@@ -1,0 +1,682 @@
+/* Custom Styles for AI Tools Blog */
+
+/* --- CSS Variables for Custom Tables --- */
+:root {
+  --table-border: #e5e7eb;
+  --table-border-light: #f3f4f6;
+  --table-text-primary: #1f2937;
+  --table-text-secondary: #4b5563;
+  --table-text-muted: #9ca3af;
+  --table-accent: #2563eb;
+  --table-gold: #d97706;
+}
+
+.dark {
+  --table-border: #374151;
+  --table-border-light: #1f2937;
+  --table-text-primary: #f3f4f6;
+  --table-text-secondary: #9ca3af;
+  --table-text-muted: #6b7280;
+  --table-accent: #60a5fa;
+  --table-gold: #f59e0b;
+}
+
+/* ==========================================================================
+   1. AI Kitchen Table Styles (.ai-kitchen) - Used in "AI Jargon" post
+   ========================================================================== */
+
+.ai-kitchen {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  margin: 2rem 0;
+  max-width: 100%;
+}
+
+.ai-kitchen table,
+.ai-kitchen thead,
+.ai-kitchen tbody,
+.ai-kitchen tr,
+.ai-kitchen th,
+.ai-kitchen td {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.ai-kitchen table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.ai-kitchen thead tr {
+  border-bottom: 2px solid var(--table-border) !important;
+}
+
+.ai-kitchen th {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--table-text-muted) !important;
+  padding: 0 10px 10px;
+  text-align: left;
+}
+
+.ai-kitchen th:first-child {
+  padding-left: 0;
+}
+
+.ai-kitchen td {
+  padding: 14px 10px;
+  vertical-align: middle;
+  border-bottom: 1px solid var(--table-border) !important;
+}
+
+.ai-kitchen td:first-child {
+  padding-left: 0;
+}
+
+.ai-kitchen tr:last-child td {
+  border-bottom: none !important;
+}
+
+.ai-kitchen tr:hover td {
+  background: rgba(0, 0, 0, 0.015) !important;
+}
+.dark .ai-kitchen tr:hover td {
+  background: rgba(255, 255, 255, 0.015) !important;
+}
+
+.ai-kitchen .pill {
+  display: inline-block;
+  font-size: 12px;
+  padding: 3px 9px;
+  border-radius: 99px;
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.ai-kitchen .p-purple {
+  background: rgba(139, 92, 246, 0.08) !important;
+  color: #8b5cf6 !important;
+  border: 1px solid rgba(139, 92, 246, 0.2) !important;
+}
+.dark .ai-kitchen .p-purple {
+  background: rgba(196, 160, 247, 0.15) !important;
+  color: #d6bcfa !important;
+}
+
+.ai-kitchen .p-teal {
+  background: rgba(16, 185, 129, 0.08) !important;
+  color: #10b981 !important;
+  border: 1px solid rgba(16, 185, 129, 0.2) !important;
+}
+.dark .ai-kitchen .p-teal {
+  background: rgba(52, 211, 153, 0.15) !important;
+  color: #81e6d9 !important;
+}
+
+.ai-kitchen .p-amber {
+  background: rgba(217, 119, 6, 0.08) !important;
+  color: #d97706 !important;
+  border: 1px solid rgba(217, 119, 6, 0.2) !important;
+}
+.dark .ai-kitchen .p-amber {
+  background: rgba(251, 191, 36, 0.15) !important;
+  color: #fbd38d !important;
+}
+
+.ai-kitchen .new-badge {
+  font-size: 9px;
+  padding: 1px 5px;
+  border-radius: 99px;
+  background: rgba(239, 68, 68, 0.08) !important;
+  color: #ef4444 !important;
+  border: 1px solid rgba(239, 68, 68, 0.2) !important;
+  vertical-align: middle;
+  margin-left: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+.dark .ai-kitchen .new-badge {
+  background: rgba(239, 68, 68, 0.15) !important;
+  color: #fca5a5 !important;
+}
+
+.ai-kitchen .arrow {
+  color: var(--table-text-muted) !important;
+  font-size: 13px;
+  padding: 0 2px;
+  text-align: center;
+}
+
+.ai-kitchen .output-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--table-text-primary) !important;
+}
+
+.ai-kitchen .goal-label {
+  font-size: 13px;
+  color: var(--table-text-secondary) !important;
+}
+
+.ai-kitchen .footnote {
+  font-size: 11px;
+  color: var(--table-text-muted) !important;
+  margin-top: 1rem;
+  line-height: 1.6;
+  border-left: 2px solid var(--table-border);
+  padding-left: 8px;
+}
+
+@media (max-width: 768px) {
+  .ai-kitchen {
+    overflow-x: auto;
+  }
+  .ai-kitchen table {
+    min-width: 600px;
+  }
+}
+
+/* ==========================================================================
+   2. AI Models Wrapper Styles (.ai-models-wrapper) - Used in "AI Models" post
+   ========================================================================== */
+
+.ai-models-wrapper {
+  --anthropic: #d97e6a;
+  --openai: #10b981;
+  --google: #3b82f6;
+  --xai: #8b5cf6;
+  --deepseek: #06b6d4;
+  --zai: #f59e0b;
+  --baidu: #ec4899;
+
+  color: var(--table-text-primary);
+  padding: 0;
+  margin: 2rem 0;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.ai-models-wrapper * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.ai-models-wrapper table,
+.ai-models-wrapper thead,
+.ai-models-wrapper tbody,
+.ai-models-wrapper tr,
+.ai-models-wrapper th,
+.ai-models-wrapper td {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.ai-models-wrapper header {
+  margin-bottom: 2rem;
+}
+
+.ai-models-wrapper .eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--table-accent) !important;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+}
+.ai-models-wrapper .eyebrow::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 1px;
+  background: var(--table-accent);
+}
+
+.ai-models-wrapper h1.table-title {
+  font-size: clamp(24px, 4vw, 32px);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 8px;
+  color: var(--table-text-primary) !important;
+  border: none !important;
+  padding: 0 !important;
+  background: transparent !important;
+}
+.ai-models-wrapper h1.table-title em {
+  font-style: italic;
+  color: var(--table-gold) !important;
+}
+
+.ai-models-wrapper .subtitle {
+  font-size: 14px;
+  color: var(--table-text-secondary) !important;
+  font-weight: 400;
+}
+
+.ai-models-wrapper .toolbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.ai-models-wrapper .edit-hint {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  color: var(--table-text-muted) !important;
+  background: transparent !important;
+  border: 1px solid var(--table-border) !important;
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+
+.ai-models-wrapper .download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  color: var(--table-accent) !important;
+  background: rgba(37, 99, 235, 0.08) !important;
+  border: 1px solid rgba(37, 99, 235, 0.2) !important;
+  border-radius: 4px;
+  padding: 5px 12px;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+  user-select: none;
+  font-weight: 500;
+}
+.ai-models-wrapper .download-btn:hover {
+  background: rgba(37, 99, 235, 0.15) !important;
+  border-color: rgba(37, 99, 235, 0.4) !important;
+}
+.dark .ai-models-wrapper .download-btn {
+  background: rgba(96, 165, 250, 0.08) !important;
+  border: 1px solid rgba(96, 165, 250, 0.2) !important;
+}
+.dark .ai-models-wrapper .download-btn:hover {
+  background: rgba(96, 165, 250, 0.15) !important;
+  border-color: rgba(96, 165, 250, 0.4) !important;
+}
+
+.ai-models-wrapper .table-wrap {
+  border: 1px solid var(--table-border) !important;
+  border-radius: 8px;
+  overflow: hidden;
+  background: transparent !important;
+  margin-top: 24px;
+}
+
+.ai-models-wrapper table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.ai-models-wrapper col.col-company { width: 13%; }
+.ai-models-wrapper col.col-models  { width: 19%; }
+.ai-models-wrapper col.col-best    { width: 16%; }
+.ai-models-wrapper col.col-iface   { width: 23%; }
+.ai-models-wrapper col.col-excels  { width: 29%; }
+
+.ai-models-wrapper thead tr {
+  border-bottom: 1px solid var(--table-border) !important;
+}
+.ai-models-wrapper thead th {
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--table-text-muted) !important;
+  padding: 14px 16px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.ai-models-wrapper tbody tr {
+  border-bottom: 1px solid var(--table-border) !important;
+}
+.ai-models-wrapper tbody tr:last-child {
+  border-bottom: none !important;
+}
+
+.ai-models-wrapper tbody tr:hover td {
+  background: rgba(0, 0, 0, 0.015) !important;
+}
+.dark .ai-models-wrapper tbody tr:hover td {
+  background: rgba(255, 255, 255, 0.015) !important;
+}
+
+.ai-models-wrapper td {
+  padding: 0;
+  vertical-align: top;
+}
+
+.ai-models-wrapper .cell {
+  padding: 12px 14px;
+  min-height: 50px;
+}
+
+.ai-models-wrapper .company-cell {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 7px;
+  height: 100%;
+}
+.ai-models-wrapper .company-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.ai-models-wrapper .company-name {
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--table-text-primary) !important;
+  outline: none;
+  white-space: nowrap;
+}
+.ai-models-wrapper .company-name:focus {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+.ai-models-wrapper .models-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.ai-models-wrapper .model-tag {
+  font-size: 11px;
+  color: var(--table-text-secondary) !important;
+  background: rgba(0,0,0,0.03) !important;
+  border: 1px solid var(--table-border-light) !important;
+  border-radius: 4px;
+  padding: 2px 7px;
+  display: inline-block;
+  width: fit-content;
+  outline: none;
+  cursor: text;
+  transition: border-color 0.2s, color 0.2s;
+}
+.dark .ai-models-wrapper .model-tag {
+  background: rgba(255,255,255,0.04) !important;
+}
+.ai-models-wrapper .model-tag:focus {
+  border-color: var(--table-accent) !important;
+  color: var(--table-text-primary) !important;
+}
+
+.ai-models-wrapper .best-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--table-gold) !important;
+  outline: none;
+  cursor: text;
+}
+
+.ai-models-wrapper .iface-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.ai-models-wrapper .iface-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.ai-models-wrapper .iface-badge {
+  font-size: 9px;
+  padding: 1px 5px;
+  border-radius: 3px;
+  font-weight: 600;
+  flex-shrink: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  min-width: 42px;
+  text-align: center;
+}
+.ai-models-wrapper .badge-web  { background: rgba(37, 99, 235, 0.08) !important; color: #2563eb !important; }
+.ai-models-wrapper .badge-desk { background: rgba(16, 185, 129, 0.08) !important; color: #10b981 !important; }
+.ai-models-wrapper .badge-ide  { background: rgba(217, 119, 6, 0.08) !important; color: #d97706 !important; }
+.ai-models-wrapper .badge-cli  { background: rgba(139, 92, 246, 0.08) !important; color: #8b5cf6 !important; }
+
+.dark .ai-models-wrapper .badge-web  { background: rgba(96, 165, 250, 0.15) !important; color: #90cdf4 !important; }
+.dark .ai-models-wrapper .badge-desk { background: rgba(52, 211, 153, 0.15) !important; color: #81e6d9 !important; }
+.dark .ai-models-wrapper .badge-ide  { background: rgba(251, 191, 36, 0.15) !important; color: #fbd38d !important; }
+.dark .ai-models-wrapper .badge-cli  { background: rgba(196, 160, 247, 0.15) !important; color: #d6bcfa !important; }
+
+.ai-models-wrapper .iface-detail {
+  font-size: 11px;
+  color: var(--table-text-secondary) !important;
+  outline: none;
+  cursor: text;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.ai-models-wrapper .iface-detail:focus {
+  color: var(--table-text-primary) !important;
+  white-space: normal;
+}
+
+.ai-models-wrapper .excels-text {
+  font-size: 13px;
+  color: var(--table-text-secondary) !important;
+  line-height: 1.5;
+  outline: none;
+  cursor: text;
+}
+.ai-models-wrapper .excels-text:focus {
+  color: var(--table-text-primary) !important;
+}
+
+.ai-models-wrapper .note {
+  display: block;
+  margin-top: 5px;
+  font-size: 11px;
+  color: var(--table-text-muted) !important;
+  border-left: 2px solid var(--table-border) !important;
+  padding-left: 7px;
+  outline: none;
+  cursor: text;
+}
+.ai-models-wrapper .note:focus {
+  color: var(--table-text-secondary) !important;
+  border-left-color: var(--table-accent) !important;
+}
+
+.ai-models-wrapper .asterisk {
+  color: var(--baidu) !important;
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 2px;
+}
+
+.ai-models-wrapper .asterisk-note {
+  margin-top: 14px;
+  font-size: 11px;
+  color: var(--table-text-muted) !important;
+}
+.ai-models-wrapper .asterisk-note span {
+  color: var(--baidu) !important;
+}
+
+.ai-models-wrapper tr[data-company="anthropic"] td:first-child { box-shadow: inset 3px 0 0 var(--anthropic) !important; }
+.ai-models-wrapper tr[data-company="openai"]    td:first-child { box-shadow: inset 3px 0 0 var(--openai) !important; }
+.ai-models-wrapper tr[data-company="google"]    td:first-child { box-shadow: inset 3px 0 0 var(--google) !important; }
+.ai-models-wrapper tr[data-company="xai"]       td:first-child { box-shadow: inset 3px 0 0 var(--xai) !important; }
+.ai-models-wrapper tr[data-company="deepseek"]  td:first-child { box-shadow: inset 3px 0 0 var(--deepseek) !important; }
+.ai-models-wrapper tr[data-company="zai"]       td:first-child { box-shadow: inset 3px 0 0 var(--zai) !important; }
+.ai-models-wrapper tr[data-company="baidu"]     td:first-child { box-shadow: inset 3px 0 0 var(--baidu) !important; }
+
+.ai-models-wrapper .dot-anthropic { background: var(--anthropic); }
+.ai-models-wrapper .dot-openai    { background: var(--openai); }
+.ai-models-wrapper .dot-google    { background: var(--google); }
+.ai-models-wrapper .dot-xai       { background: var(--xai); }
+.ai-models-wrapper .dot-deepseek  { background: var(--deepseek); }
+.ai-models-wrapper .dot-zai       { background: var(--zai); }
+.ai-models-wrapper .dot-baidu     { background: var(--baidu); }
+
+@media (max-width: 768px) {
+  .ai-models-wrapper .table-wrap { overflow-x: auto; }
+  .ai-models-wrapper table { min-width: 720px; }
+}
+
+/* ==========================================================================
+   3. MCP Tools Ranked Table Styles (.tt) - Used in "MCP Tools Ranked" post
+   ========================================================================== */
+
+.tt {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  table-layout: fixed;
+}
+
+.tt th {
+  font-size: 11px;
+  font-weight: 500;
+  color: #6b7280;
+  text-align: left;
+  padding: 6px 8px;
+  border-bottom: 0.5px solid #e5e7eb;
+}
+
+.tt td {
+  padding: 8px;
+  border-bottom: 0.5px solid #e5e7eb;
+  vertical-align: top;
+}
+
+.tt tr:last-child td {
+  border-bottom: none;
+}
+
+.tt tr.data-row:hover td {
+  background: #f9fafb;
+}
+
+.tt .rk {
+  font-size: 15px;
+  font-weight: 500;
+  width: 24px;
+  text-align: center;
+}
+
+.tt .nm {
+  font-weight: 500;
+  font-size: 13px;
+}
+.tt .nm a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.tt .sb {
+  font-size: 11px;
+  color: #6b7280;
+  margin-top: 2px;
+}
+
+.tt .badge {
+  display: inline-block;
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin: 1px 1px 1px 0;
+  white-space: nowrap;
+}
+
+.tt .bg { background: #EAF3DE; color: #3B6D11; }
+.tt .ba { background: #FAEEDA; color: #854F0B; }
+.tt .br { background: #FCEBEB; color: #A32D2D; }
+.tt .bb { background: #E6F1FB; color: #185FA5; }
+.tt .bgy { background: #F1EFE8; color: #5F5E5A; }
+.tt .bp { background: #EEEDFE; color: #3C3489; }
+
+.tt .bar-wrap {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.tt .bar-bg {
+  flex: 1;
+  height: 5px;
+  background: #e5e7eb;
+  border-radius: 3px;
+  min-width: 40px;
+}
+
+.tt .bar-fill {
+  height: 5px;
+  border-radius: 3px;
+}
+
+.tt .bar-teal { background: #1D9E75; }
+.tt .bar-amber { background: #BA7517; }
+
+.tt .sc {
+  font-size: 12px;
+  color: #6b7280;
+  min-width: 28px;
+}
+
+.tt .sl {
+  font-size: 11px;
+  font-weight: 500;
+  color: #6b7280;
+  padding: 10px 8px 4px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.tt .paid-row td {
+  opacity: 0.85;
+}
+
+.tt .out-row td {
+  opacity: 0.7;
+}
+
+/* Dark Mode Overrides for MCP Tools Ranked Table */
+.dark .tt th {
+  color: #9ca3af;
+  border-bottom-color: #374151;
+}
+
+.dark .tt td {
+  border-bottom-color: #374151;
+}
+
+.dark .tt tr.data-row:hover td {
+  background: #1f2937;
+}
+
+.dark .tt .sb { color: #9ca3af; }
+.dark .tt .sc { color: #9ca3af; }
+.dark .tt .sl { color: #9ca3af; }
+
+.dark .tt .bar-bg {
+  background: #374151;
+}
+
+.dark .tt .bg { background: #27500A; color: #C0DD97; }
+.dark .tt .ba { background: #633806; color: #FAC775; }
+.dark .tt .br { background: #791F1F; color: #F7C1C1; }
+.dark .tt .bb { background: #0C447C; color: #B5D4F4; }
+.dark .tt .bgy { background: #444441; color: #D3D1C7; }
+.dark .tt .bp { background: #3C3489; color: #CECBF6; }

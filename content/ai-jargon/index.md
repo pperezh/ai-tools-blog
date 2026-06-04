@@ -14,25 +14,7 @@ The interactive table below illustrates how these three pieces combine for the t
 
 I am currently working on a way to keep these three elements organized and ready to be used across different toolkits in a setup that people are calling model-agnostic. Stay tuned for that upcoming post, and in the meantime, I'd love to hear what your setup is! You can reach me at [patricio@pperezh.com](mailto:patricio@pperezh.com).
 
-<style>
-.ai-kitchen { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; margin: 2rem 0; }
-.ai-kitchen table { width: 100%; border-collapse: collapse; font-size: 14px; }
-.ai-kitchen thead tr { border-bottom: 2px solid #e2e2e2; }
-.ai-kitchen th { font-size: 11px; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; color: #999; padding: 0 10px 10px; text-align: left; }
-.ai-kitchen th:first-child { padding-left: 0; }
-.ai-kitchen td { padding: 11px 10px; vertical-align: middle; border-bottom: 1px solid #f0f0f0; }
-.ai-kitchen td:first-child { padding-left: 0; }
-.ai-kitchen tr:last-child td { border-bottom: none; }
-.ai-kitchen .pill { display: inline-block; font-size: 12px; padding: 3px 9px; border-radius: 99px; white-space: nowrap; }
-.ai-kitchen .p-purple { background: #EEEDFE; color: #3C3489; }
-.ai-kitchen .p-teal   { background: #E1F5EE; color: #085041; }
-.ai-kitchen .p-amber  { background: #FAEEDA; color: #633806; }
-.ai-kitchen .new-badge { font-size: 10px; padding: 1px 5px; border-radius: 99px; background: #FAECE7; color: #712B13; vertical-align: middle; margin-left: 4px; }
-.ai-kitchen .arrow { color: #ccc; font-size: 13px; padding: 0 2px; }
-.ai-kitchen .output-label { font-size: 13px; font-weight: 500; color: #111; }
-.ai-kitchen .goal-label { font-size: 13px; color: #555; }
-.ai-kitchen .footnote { font-size: 11px; color: #aaa; margin-top: 1rem; line-height: 1.6; }
-</style>
+
 
 <div class="ai-kitchen">
   <table>
