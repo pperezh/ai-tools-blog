@@ -1,3 +1,7 @@
+---
+description: Start a new blog post, ask for the topic, generate a draft, and prompt the design of a featured thumbnail.
+---
+
 # Workflow: New Blog Post (`/new-blog-post`)
 
 This workflow guides the AI coding assistant through the step-by-step process of initiating, drafting, refining, and designing a featured thumbnail for a new bilingual blog post in the AI Tools blog.
