@@ -1,5 +1,5 @@
 ---
-title: "Programación más allá del código: Cómo el framework BLAST y la IA empoderan a cualquiera para crear aplicaciones web"
+title: "Empoderando a cualquiera para crear aplicaciones web con IA"
 date: 2026-07-02
 description: "Cómo usar el framework BLAST y las herramientas de agentes de IA para construir aplicaciones web premium y listas para producción sin escribir código desde cero."
 tags: ["AI", "Web Development", "BLAST Framework", "No-Code", "Agentic Coding"]
