@@ -26,7 +26,7 @@ Así es como se orquesta el flujo de trabajo de BLAST en un entorno de desarroll
 
 ## Diseñando una App Comercial con BLAST: Un Ejemplo Real
 
-Veamos cómo se aplica BLAST para construir una página de aterrizaje (landing page) para mi propia página web comercial **NOVATAX**, un sitio web premium de consultoría científica y técnica que conecta la I+D con la estrategia financiera.
+Veamos cómo se aplica BLAST para construir una página de aterrizaje (landing page) para un sitio web premium de consultoría científica y técnica que conecta la I+D con la estrategia financiera.
 
 * **Blueprint**: Define el público objetivo como directores de tecnología (CTOs), investigadores principales (PIs) y vicepresidentes de ingeniería. La restricción principal es clara: *nada de plantillas genéricas de startups, sin gradientes cripto y sin fotos de stock genéricas.*
 * **Links**: Dirige a la IA a archivos locales como `webcontent.docx` (la fuente de verdad para el texto copy) y `design-options.pptx` (un PowerPoint que contiene conceptos de maquetación).

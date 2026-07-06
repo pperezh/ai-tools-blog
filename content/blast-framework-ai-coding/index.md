@@ -16,17 +16,17 @@ The BLAST framework is a five-phase system designed to guide AI agents from proj
 
 Once Protocol Zero is initialized, the BLAST phases guide the build:
 
-1. **B — Blueprint**: Define the project outcome, target audience, strict constraints, and success criteria.
-2. **L — Links**: Declare all external assets, databases, CMS configs, or reference documents (such as business fundamentals or design options)
-3. **A — Architect**: Map out the exact section-by-section structure of the application.
-4. **S — Stylize**: Outline the exact design rules, typography, color palettes, visual motifs, and reference sites.
-5. **T — Trigger**: Establish the testing, local preview, and deployment pipeline.
+1. **B - Blueprint**: Define the project outcome, target audience, strict constraints, and success criteria.
+2. **L - Links**: Declare all external assets, databases, CMS configs, or reference documents (such as business fundamentals or design options)
+3. **A - Architect**: Map out the exact section-by-section structure of the application.
+4. **S - Stylize**: Outline the exact design rules, typography, color palettes, visual motifs, and reference sites.
+5. **T - Trigger**: Establish the testing, local preview, and deployment pipeline.
 
 Here is how the BLAST workflow is orchestrated in an agent-led development environment:
 
 ## Designing a Business App with BLAST: A Real-World Example
 
-Let's look at how BLAST is applied to build a landing page for my own buisines webpage **NOVATAX**, a premium scientific consulting website bridging R&D and financial strategy.
+Let's look at how BLAST is applied to build a landing page for a premium scientific consulting website bridging R&D and financial strategy.
 
 * **Blueprint**: Define the target audience as CTOs, Principal Investigators, and VPs of Engineering. The core constraint is clear: *no generic startup templates, no crypto gradients, and no generic stock photos.*
 * **Links**: Point the AI to local files such as `webcontent.docx` (the source of truth for text copy) and `design-options.pptx` (a PowerPoint containing layout concepts).
@@ -35,7 +35,7 @@ Let's look at how BLAST is applied to build a landing page for my own buisines w
   2. **Who we are**: Frascati Manual alignment and interactive financial calculator.
   3. **Services**: Strategy & Application consulting pillars.
   4. **Contact Us**: Highly focused diagnostic session sign-up form.
-* **Stylize**: Enforce a palette of colors. (e.g. Deep Navy, Deep Purple, and White, with Orange reserved strictly for CTAs). Specify a clean and modern layout with sans-serif typography. Add monospaced typography accents and background motifs inspired by AFM microscopy patterns.
+* **Stylize**: Enforce a palette of colors. (e.g. Deep Navy, Deep Purple, and White, with Orange reserved strictly for CTAs). Specify a clean and modern layout with sans-serif typography. Add monospaced typography accents and background motifs inspired by  AFM microscopy patterns.
 * **Trigger**: Set up the local server first (`pnpm dev`), verify everything renders perfectly on `http://localhost:3000`, push the code to GitHub, and auto-deploy via Vercel while linking a Porkbun custom domain.
 
 ---
