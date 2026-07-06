@@ -1,5 +1,5 @@
 ---
-title: "Empower Anyone to Build Web Apps with AI"
+title: "Empowering Anyone to Build Web Apps with AI"
 date: 2026-07-02
 description: "How to use the BLAST framework and AI agent tools to build premium, production-ready web applications without writing code from scratch."
 tags: ["AI", "Web Development", "BLAST Framework", "No-Code", "Agentic Coding"]
