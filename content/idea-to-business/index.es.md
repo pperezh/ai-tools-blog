@@ -3,7 +3,7 @@ title: "Una 'skill' para bosquejar tu nueva idea de negocio"
 date: 2026-08-13
 description: "simplemente usa esta 'skill' y podras tener una primera aproximación para cualquier idea de negocio en aspectos como: segmentación de mercado, estrategia GTM, identidad de marca, pitch deck y sitio web en Next.js."
 tags: ["IA", "Agentes", "Workflows", "Startups", "Negocios"]
-sidebarGroup: "concepts"
+sidebarGroup: "tools"
 ---
 
 Transformar una idea bruta en un negocio listo para lanzar requiere semanas de trabajo fragmentado. Es necesario identificar segmentos de clientes objetivos, analizar competidores, diseñar una estrategia Go-To-Market (GTM), definir una identidad de marca visual, construir un pitch deck convincente y desarrollar una presencia web moderna.
@@ -14,7 +14,7 @@ Si tienes una idea, quieres empezar ya mismo, ver de inmediato cómo se ve y tes
 
 ---
 
-## 🗺️ ¿Qué es `idea-to-business`?
+## ¿Qué es `idea-to-business`?
 
 `idea-to-business` es un skill de prompt de sistema estructurado que convierte cualquier entorno de IA en un arquitecto de negocios autónomo. En lugar de generar un solo bloque masivo de texto, I2B ejecuta una **máquina de estados determinista de 6 fases** con **4 puntos de control con intervención humana (🛑)**. El agente se detiene en hitos estratégicos clave—como la evaluación de segmentos, el nombrado de la empresa, la elección de estilo de marca y el diseño del logo—para garantizar que la visión humana guíe cada decisión antes de generar los activos finales.
 
@@ -39,7 +39,7 @@ Si tienes una idea, quieres empezar ya mismo, ver de inmediato cómo se ve y tes
         <td class="goal-label">1. Segmentación de Mercado</td>
         <td><span class="pill p-purple">Claude 3.7 Sonnet</span></td>
         <td class="arrow">→</td>
-        <td><span class="pill p-teal">Claude Code / Windsurf</span></td>
+        <td><span class="pill p-teal">Claude Code / OpenCode</span></td>
         <td class="arrow">→</td>
         <td><span class="pill p-amber">idea-to-business</span></td>
         <td class="arrow">→</td>
@@ -47,9 +47,9 @@ Si tienes una idea, quieres empezar ya mismo, ver de inmediato cómo se ve y tes
       </tr>
       <tr>
         <td class="goal-label">2. GTM y Posicionamiento</td>
-        <td><span class="pill p-purple">Claude 3.7 Sonnet</span></td>
+        <td><span class="pill p-purple">GPT-5.5</span></td>
         <td class="arrow">→</td>
-        <td><span class="pill p-teal">Claude Code / Windsurf</span></td>
+        <td><span class="pill p-teal">Codex / Hermes</span></td>
         <td class="arrow">→</td>
         <td><span class="pill p-amber">idea-to-business</span></td>
         <td class="arrow">→</td>
@@ -57,9 +57,9 @@ Si tienes una idea, quieres empezar ya mismo, ver de inmediato cómo se ve y tes
       </tr>
       <tr>
         <td class="goal-label">3. Marca y Logo SVG</td>
-        <td><span class="pill p-purple">Claude 3.7 Sonnet</span></td>
+        <td><span class="pill p-purple">Gemini 3.8</span></td>
         <td class="arrow">→</td>
-        <td><span class="pill p-teal">Claude Code / Windsurf</span></td>
+        <td><span class="pill p-teal">Antigravity / Claude Code</span></td>
         <td class="arrow">→</td>
         <td><span class="pill p-amber">idea-to-business</span></td>
         <td class="arrow">→</td>
@@ -67,9 +67,9 @@ Si tienes una idea, quieres empezar ya mismo, ver de inmediato cómo se ve y tes
       </tr>
       <tr>
         <td class="goal-label">4. Pitch Deck y Web</td>
-        <td><span class="pill p-purple">Claude 3.7 Sonnet</span></td>
+        <td><span class="pill p-purple">Claude 3.7 Sonnet / GPT-5.5</span></td>
         <td class="arrow">→</td>
-        <td><span class="pill p-teal">Claude Code / Windsurf</span></td>
+        <td><span class="pill p-teal">OpenCode / Hermes</span></td>
         <td class="arrow">→</td>
         <td><span class="pill p-amber">idea-to-business</span></td>
         <td class="arrow">→</td>
@@ -77,12 +77,12 @@ Si tienes una idea, quieres empezar ya mismo, ver de inmediato cómo se ve y tes
       </tr>
     </tbody>
   </table>
-  <p class="footnote">* 🛑 indica un punto de control obligatorio de revisión humana antes de continuar.</p>
+  <p class="footnote">* Los modelos y agentes mostrados arriba son ejemplos; el workflow es independiente del modelo y funciona en Claude Code, OpenCode, Antigravity, Codex, Hermes, entre otros.<br>* 🛑 indica un punto de control obligatorio de revisión humana antes de continuar.</p>
 </div>
 
 ---
 
-## ⚡ La Máquina de Estados de 6 Fases
+## La Máquina de Estados de 6 Fases
 
 El workflow opera bajo un estricto modelo de **Aislamiento Dinámico del Workspace**, creando un directorio raíz exclusivo para la empresa (ej. `[nombre-empresa]/`) para mantener todos los documentos estratégicos, presentaciones y código web perfectamente organizados.
 
@@ -95,22 +95,22 @@ El workflow opera bajo un estricto modelo de **Aislamiento Dinámico del Workspa
 
 ---
 
-## 🛠️ Aspectos Clave de Ingeniería de IA
+## Aspectos Clave de Ingeniería de IA
 
 * **Control Humano en el Bucle**: Evita generaciones descontroladas bloqueando las decisiones arquitectónicas e identitarias tras la aprobación del usuario.
 * **Garantía Cero Textos de Relleno**: Toda la redacción, propuestas de valor y contenido web se basan directamente en el análisis estratégico del mercado.
 * **Tokens de Diseño Dinámicos**: Las paletas de colores y tipografías definidas en la Fase 4 se vinculan dinámicamente a las hojas de estilo SCSS del deck y a las variables CSS de Next.js.
-* **Skill Portátil**: Estandarizado en un archivo `SKILL.md`, compatible con Claude Code, Cursor, Windsurf, ChatGPT y cualquier entorno LLM con instrucciones de sistema.
+* **Skill Portátil**: Estandarizado en un archivo `SKILL.md`, compatible con Claude Code, OpenCode, Antigravity, Codex, Hermes y cualquier entorno LLM con instrucciones de sistema.
 
 ---
 
-## 🚀 Cómo Empezar y Lo Que Viene
+## Cómo Empezar y Lo Que Viene
 
 El workflow completo es open source y está disponible desde hoy. Puedes copiar las instrucciones del skill en tu herramienta de IA favorita y transformar tu próxima idea en un negocio validado en minutos.
 
 * Explora el repositorio en GitHub: [pperezh/idea-to-business](https://github.com/pperezh/idea-to-business)
 
-### 🔮 ¿Qué viene a continuación?
+### ¿Qué viene a continuación?
 
 Si te parece potente validar ideas de negocio de forma agéntica, mantente atento: **¡pronto vendrá `idea-to-paper`!**
 

@@ -3,7 +3,7 @@ title: "A 'Skill' to Sketch Out Your New Business Idea"
 date: 2026-08-13
 description: "Simply use this 'skill' and you'll get a first solid baseline for any business idea across market segmentation, GTM strategy, brand identity, pitch deck, and a Next.js website."
 tags: ["AI", "Agents", "Workflows", "Startups", "Business"]
-sidebarGroup: "concepts"
+sidebarGroup: "tools"
 ---
 
 Turning a raw idea into a launch-ready business venture typically requires weeks of fragmented work. You need to identify target customer segments, analyze competitors, craft a Go-To-Market (GTM) strategy, establish a visual brand identity, design a compelling pitch deck, and build a modern web presence.
@@ -14,7 +14,7 @@ If you have an idea, want to get started right away, see immediately what it loo
 
 ---
 
-## 🗺️ What is `idea-to-business`?
+## What is `idea-to-business`?
 
 `idea-to-business` is a structured system-prompt skill that transforms any AI environment into an autonomous business architect. Rather than generating a single wall of text, I2B runs a **6-phase deterministic state machine** with **4 human feedback checkpoints (🛑)**. The agent pauses at key strategic milestones—such as segment scoring, naming, brand style selection, and logo emblem design—to ensure human intent guides every decision before asset generation begins.
 
@@ -39,7 +39,7 @@ If you have an idea, want to get started right away, see immediately what it loo
         <td class="goal-label">1. Market Segmentation</td>
         <td><span class="pill p-purple">Claude 3.7 Sonnet</span></td>
         <td class="arrow">→</td>
-        <td><span class="pill p-teal">Claude Code / Windsurf</span></td>
+        <td><span class="pill p-teal">Claude Code / OpenCode</span></td>
         <td class="arrow">→</td>
         <td><span class="pill p-amber">idea-to-business</span></td>
         <td class="arrow">→</td>
@@ -47,9 +47,9 @@ If you have an idea, want to get started right away, see immediately what it loo
       </tr>
       <tr>
         <td class="goal-label">2. GTM & Positioning</td>
-        <td><span class="pill p-purple">Claude 3.7 Sonnet</span></td>
+        <td><span class="pill p-purple">GPT-5.5</span></td>
         <td class="arrow">→</td>
-        <td><span class="pill p-teal">Claude Code / Windsurf</span></td>
+        <td><span class="pill p-teal">Codex / Hermes</span></td>
         <td class="arrow">→</td>
         <td><span class="pill p-amber">idea-to-business</span></td>
         <td class="arrow">→</td>
@@ -57,9 +57,9 @@ If you have an idea, want to get started right away, see immediately what it loo
       </tr>
       <tr>
         <td class="goal-label">3. Brand & SVG Logo</td>
-        <td><span class="pill p-purple">Claude 3.7 Sonnet</span></td>
+        <td><span class="pill p-purple">Gemini 3.8</span></td>
         <td class="arrow">→</td>
-        <td><span class="pill p-teal">Claude Code / Windsurf</span></td>
+        <td><span class="pill p-teal">Antigravity / Claude Code</span></td>
         <td class="arrow">→</td>
         <td><span class="pill p-amber">idea-to-business</span></td>
         <td class="arrow">→</td>
@@ -67,9 +67,9 @@ If you have an idea, want to get started right away, see immediately what it loo
       </tr>
       <tr>
         <td class="goal-label">4. Pitch Deck & Web</td>
-        <td><span class="pill p-purple">Claude 3.7 Sonnet</span></td>
+        <td><span class="pill p-purple">Claude 3.7 Sonnet / GPT-5.5</span></td>
         <td class="arrow">→</td>
-        <td><span class="pill p-teal">Claude Code / Windsurf</span></td>
+        <td><span class="pill p-teal">OpenCode / Hermes</span></td>
         <td class="arrow">→</td>
         <td><span class="pill p-amber">idea-to-business</span></td>
         <td class="arrow">→</td>
@@ -77,12 +77,12 @@ If you have an idea, want to get started right away, see immediately what it loo
       </tr>
     </tbody>
   </table>
-  <p class="footnote">* 🛑 indicates a mandatory human-in-the-loop feedback checkpoint before advancing.</p>
+  <p class="footnote">* Models and agents shown above are examples; the workflow is model-agnostic and runs across Claude Code, OpenCode, Antigravity, Codex, Hermes, and more.<br>* 🛑 indicates a mandatory human-in-the-loop feedback checkpoint before advancing.</p>
 </div>
 
 ---
 
-## ⚡ The 6-Phase State Machine
+## The 6-Phase State Machine
 
 The workflow operates under strict **Dynamic Workspace Isolation**, creating a dedicated parent directory for the business (e.g., `[company-name]/`) to keep all generated strategy files, pitch decks, and web code organized.
 
@@ -95,22 +95,22 @@ The workflow operates under strict **Dynamic Workspace Isolation**, creating a d
 
 ---
 
-## 🛠️ Key AI Engineering Features
+## Key AI Engineering Features
 
 * **Human-in-the-Loop Safeguards**: Prevents runaway generation by locking key architectural and branding choices behind user approvals.
 * **Zero-Placeholder Guarantee**: All generated copywriting, value propositions, and website content are fully grounded in the strategic market analysis.
 * **Dynamic Design Tokens**: Color palettes and typography tokens defined in Phase 4 are dynamically bound to SCSS slide stylesheets and Next.js CSS variables.
-* **Portable Skill Design**: Standardized as a `SKILL.md` file, making it compatible with Claude Code, Cursor, Windsurf, ChatGPT, and custom LLM environments.
+* **Portable Skill Design**: Standardized as a `SKILL.md` file, making it compatible with Claude Code, OpenCode, Antigravity, Codex, Hermes, and custom LLM environments.
 
 ---
 
-## 🚀 Get Started & What's Coming Next
+## Get Started & What's Coming Next
 
 The entire workflow skill is open source and available today. You can copy the skill instructions into your favorite AI tool and turn your next idea into a validated business in minutes.
 
 * Explore the GitHub repository: [pperezh/idea-to-business](https://github.com/pperezh/idea-to-business)
 
-### 🔮 What's Next?
+### What's Next?
 
 If you find validating business ideas with agents powerful, stay tuned: **`idea-to-paper` is coming soon!**
 
