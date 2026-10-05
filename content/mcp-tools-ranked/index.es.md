@@ -3,6 +3,7 @@ title: "Citaciones y referencias en el texto academico assistido por IA"
 date: 2026-05-13
 description: "Comparación jerarquizada de servidores MCP para búsqueda de citas, expansión temática y revisión bibliográfica. Incluye Scite, Semantic Scholar, OpenAlex, PubMed, Zotero y más."
 tags: ["IA", "MCP", "literatura", "herramientas"]
+sidebarGroup: "tools"
 ---
 
 La IA es una excelente herramienta para ayudar a los científicos a desarrollar ideas, escribir artículos y refinar sus resultados. Tengo la impresión de que parte de la resistencia a su adopción proviene de una limitación real: la investigación requiere algo más que edición de texto. Requiere conectarse a las fuentes del conocimiento.

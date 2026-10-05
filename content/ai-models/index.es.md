@@ -3,6 +3,7 @@ title: "Más allá del modelo de IA por defecto"
 date: 2026-05-27
 description: "Una guía de campo interactiva sobre el panorama moderno de la IA, que explica por qué depender de un solo modelo es una limitación de flujo de trabajo y mapea laboratorios clave, modelos e interfaces."
 tags: ["IA", "modelos", "flujo-de-trabajo"]
+sidebarGroup: "tools"
 ---
 
 Los modelos de IA están evolucionando a un ritmo que es genuinamente difícil de seguir. Cada pocas semanas, un nuevo modelo lidera un benchmark, se lanza una nueva interfaz y la opción que antes era la "mejor" se hace a un lado silenciosamente. Más importante aún, diferentes modelos ahora sobresalen en tareas muy distintas (escritura, programación, matemáticas, generación de imágenes, eficiencia de costos), lo que significa que depender de un solo modelo es cada vez más una limitación y no un flujo de trabajo.

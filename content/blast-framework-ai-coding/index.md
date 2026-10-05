@@ -3,6 +3,7 @@ title: "Empowering Anyone to Build Web Apps with AI"
 date: 2026-07-02
 description: "How to use the BLAST framework and AI agent tools to build premium, production-ready web applications without writing code from scratch."
 tags: ["AI", "Web Development", "BLAST Framework", "No-Code", "Agentic Coding"]
+sidebarGroup: "concepts"
 ---
 Software development is undergoing a fundamental shift. Today, artificial intelligence enables people with basic coding knowledge to build complex, production-ready web applications. However, simply asking an AI model to \"build a website\" often results in messy codebases, broken styles, and endless debugging loops.
 

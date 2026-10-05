@@ -22,6 +22,9 @@ theme = "blowfish"
     showRecent = true
     recentLimit = 10
 
+  [params.article]
+    showTableOfContents = true
+
 [languages]
   # --- English Configuration ---
   [languages.en]
@@ -32,14 +35,14 @@ theme = "blowfish"
 
     [languages.en.menu]
       [[languages.en.menu.main]]
-        identifier = "home"
-        name = "Back to Main Site"
-        url = "https://www.pperezh.com/"
+        identifier = "blog"
+        name = "Blog"
+        url = "/"
         weight = 10
       [[languages.en.menu.main]]
-        identifier = "ai-tools"
-        name = "AI Tools"
-        url = "/"
+        identifier = "main-site"
+        name = "Main Site"
+        url = "https://www.pperezh.com/"
         weight = 20
 
     [languages.en.params]
@@ -64,14 +67,14 @@ theme = "blowfish"
 
     [languages.es.menu]
       [[languages.es.menu.main]]
-        identifier = "home"
-        name = "Volver al Sitio Principal"
-        url = "https://www.pperezh.com/es/"
+        identifier = "blog"
+        name = "Blog"
+        url = "/es/"
         weight = 10
       [[languages.es.menu.main]]
-        identifier = "ai-tools"
-        name = "Herramientas IA"
-        url = "/es/"
+        identifier = "main-site"
+        name = "Sitio principal"
+        url = "https://www.pperezh.com/es/"
         weight = 20
 
     [languages.es.params]

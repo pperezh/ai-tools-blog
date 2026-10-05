@@ -1,0 +1,55 @@
+{{ $home := . }}
+{{ $groupKeys := slice "tools" "concepts" }}
+{{ $articles := slice }}
+{{ range site.RegularPages }}
+  {{ if and (not .Draft) (in $groupKeys .Params.sidebarGroup) }}
+    {{ $articles = $articles | append . }}
+  {{ end }}
+{{ end }}
+{{ $articles = sort $articles "Date" "desc" }}
+
+<div class="blog-index">
+  <div class="blog-index__layout">
+    {{ partial "blog/article-index.html" . }}
+
+    <main class="blog-index__main">
+      <nav class="blog-index__breadcrumb" aria-label="Breadcrumb">
+        <a href="{{ .RelPermalink }}">{{ .Params.blogLabel }}</a>
+        <span aria-hidden="true">›</span>
+        <h1 aria-current="page">{{ .Params.allArticlesLabel }}</h1>
+      </nav>
+
+      <header class="blog-index__intro">
+        <div class="blog-index__subtitle">{{ .Content }}</div>
+      </header>
+
+      <section class="blog-index__feed" aria-label="{{ .Params.allArticlesLabel }}">
+        {{ range $articles }}
+          {{ $article := . }}
+          {{ $topic := "" }}
+          {{ range $home.Params.articleGroups }}
+            {{ if eq .key $article.Params.sidebarGroup }}
+              {{ $topic = .title }}
+            {{ end }}
+          {{ end }}
+          <article class="blog-index__article">
+            {{ with .Resources.GetMatch "featured.*" }}
+              <a class="blog-index__image-link" href="{{ $article.RelPermalink }}" tabindex="-1" aria-hidden="true">
+                <img src="{{ .RelPermalink }}" alt="" loading="lazy" decoding="async">
+              </a>
+            {{ end }}
+            <div class="blog-index__article-copy">
+              <p class="blog-index__topic-label">{{ $topic }}</p>
+              <h2><a href="{{ .RelPermalink }}">{{ .Title | emojify }}</a></h2>
+              {{ with .Description }}<p class="blog-index__summary">{{ . }}</p>{{ end }}
+              <p class="blog-index__meta">
+                {{ with site.Language.Params.author.name }}<span>{{ . }}</span><span aria-hidden="true">·</span>{{ end }}
+                {{ partial "meta/date.html" $article.Date }}
+              </p>
+            </div>
+          </article>
+        {{ end }}
+      </section>
+    </main>
+  </div>
+</div>

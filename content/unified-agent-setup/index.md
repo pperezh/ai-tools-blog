@@ -3,6 +3,7 @@ title: "Write Your Agent Config Once, Symlink It Everywhere"
 date: 2026-06-10
 description: "How to centralize your global instruction files, custom skills, and agents using a tool-agnostic folder structure and symlinks."
 tags: ["AI", "productivity", "workflows", "setup"]
+sidebarGroup: "concepts"
 ---
 The efficiency of AI tools depends on the context we provide them. In particular, the model should be able to read at least: **1) global instructions (`AGENTS.md`), 2) custom instructions/skills (`skills/` folder), and 3) personalities/agents (`agents/` folder)**. Some publicly available skill repositories and agents are amazing; however, in the AI world, there seems to be a consensus among users that the best results come from **carefully crafting these files manually**. Therefore, managing these files across different models has become a key aspect of maintaining a truly model-agnostic workflow.
 

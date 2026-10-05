@@ -3,6 +3,7 @@ title: "Jerga de IA: no te pierdas, ¡hazlo bien!"
 date: 2026-06-04
 description: "Por qué cambiar de modelo no es suficiente: cómo separar el modelo, el agente y la habilidad para construir un flujo de trabajo de IA coherente y multiherramienta."
 tags: ["IA", "productividad", "flujos de trabajo", "jerga"]
+sidebarGroup: "concepts"
 ---
 El espacio de la IA avanza rápido y es bastante difícil mantenerse al día con todo este nuevo vocabulario. Hace unos meses empecé a usar múltiples herramientas de IA de forma simultánea: Claude Code para programación, OpenCode en la terminal, Cowork para tareas de archivos y Antigravity para páginas web. Lo que noté rápidamente es que los mismos conceptos reciben nombres diferentes según quién haya creado la herramienta, y la gente utiliza "modelo", "agente" e "IA" de manera intercambiable, lo que genera una confusión real cuando intentas configurar un flujo de trabajo coherente.
 

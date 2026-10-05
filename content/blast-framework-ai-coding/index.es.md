@@ -3,6 +3,7 @@ title: "Empoderando a cualquiera a crear aplicaciones web con IA"
 date: 2026-07-02
 description: "Cómo usar el framework BLAST y las herramientas de agentes de IA para construir aplicaciones web premium y listas para producción sin escribir código desde cero."
 tags: ["AI", "Web Development", "BLAST Framework", "No-Code", "Agentic Coding"]
+sidebarGroup: "concepts"
 ---
 El desarrollo de software está experimentando un cambio trascendental. Hoy en día, la inteligencia artificial permite a personas con conocimientos básicos de programación construir aplicaciones web profesionales y listas para producción. Sin embargo, pedirle simplemente a un modelo de IA que \"construya un sitio web\" a menudo resulta en bases de código desorganizadas, estilos rotos y loops interminables de limpieza y depuración.
 

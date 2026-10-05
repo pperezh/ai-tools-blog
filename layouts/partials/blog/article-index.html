@@ -1,0 +1,36 @@
+{{ $home := site.Home }}
+{{ $current := . }}
+{{ $groupKeys := slice "tools" "concepts" }}
+{{ $articles := slice }}
+{{ range site.RegularPages }}
+  {{ if and (not .Draft) (in $groupKeys .Params.sidebarGroup) }}
+    {{ $articles = $articles | append . }}
+  {{ end }}
+{{ end }}
+{{ $articles = sort $articles "Date" "desc" }}
+
+<aside class="blog-index__sidebar" aria-labelledby="blog-index-articles-heading">
+  <h2 id="blog-index-articles-heading">{{ $home.Params.articlesLabel }}</h2>
+  <nav aria-label="{{ $home.Params.articlesLabel }}">
+    <p class="blog-index__all-link">
+      <a href="{{ $home.RelPermalink }}"{{ if $current.IsHome }} aria-current="page"{{ end }}>{{ $home.Params.allArticlesLabel }}</a>
+    </p>
+    {{ range $home.Params.articleGroups }}
+      {{ $group := . }}
+      {{ $count := 0 }}
+      {{ range $articles }}
+        {{ if eq .Params.sidebarGroup $group.key }}{{ $count = add $count 1 }}{{ end }}
+      {{ end }}
+      <section class="blog-index__topic">
+        <h3 id="topic-{{ .key }}"><span>{{ .title }}</span><span class="blog-index__count">{{ $count }}</span></h3>
+        <ul>
+          {{ range $articles }}
+            {{ if eq .Params.sidebarGroup $group.key }}
+              <li><a href="{{ .RelPermalink }}"{{ if eq .RelPermalink $current.RelPermalink }} aria-current="page"{{ end }}>{{ .Title | emojify }}</a></li>
+            {{ end }}
+          {{ end }}
+        </ul>
+      </section>
+    {{ end }}
+  </nav>
+</aside>

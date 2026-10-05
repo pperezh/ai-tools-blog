@@ -3,6 +3,7 @@ title: "Citations and references in AI-assisted academic writing"
 date: 2026-05-13
 description: "A ranked comparison of MCP server tools for citation lookup, topic expansion, and literature review workflows. Covers Scite, Semantic Scholar, OpenAlex, PubMed, Zotero, and more."
 tags: ["AI", "MCP", "literature", "tools"]
+sidebarGroup: "tools"
 ---
 
 AI can be an excellent tool to help scientists develop ideas, write papers, and refine their output. My impression is that resistance to adoption comes from a real limitation: research requires more than text editing. It requires connecting to the sources of knowledge.

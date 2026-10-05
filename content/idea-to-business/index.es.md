@@ -1,15 +1,16 @@
 ---
-title: "De Idea Inicial a Empresa Lista para Lanzar: El Workflow Agéntico Idea-to-Business"
+title: "Una 'skill' para bosquejar tu nueva idea de negocio"
 date: 2026-08-13
-description: "Cómo una máquina de estados agéntica transforma sistemáticamente una idea de negocio en segmentación de mercado, estrategia GTM, identidad de marca, pitch deck y sitio web en Next.js."
+description: "simplemente usa esta 'skill' y podras tener una primera aproximación para cualquier idea de negocio en aspectos como: segmentación de mercado, estrategia GTM, identidad de marca, pitch deck y sitio web en Next.js."
 tags: ["IA", "Agentes", "Workflows", "Startups", "Negocios"]
+sidebarGroup: "concepts"
 ---
 
 Transformar una idea bruta en un negocio listo para lanzar requiere semanas de trabajo fragmentado. Es necesario identificar segmentos de clientes objetivos, analizar competidores, diseñar una estrategia Go-To-Market (GTM), definir una identidad de marca visual, construir un pitch deck convincente y desarrollar una presencia web moderna.
 
-Aunque los modelos de IA son excelentes para redactar documentos aislados o snippets de código, los prompts no estructurados suelen generar resultados genéricos, tokens de diseño rotos y textos de relleno.
+Si tienes una idea, quieres empezar ya mismo, ver de inmediato cómo se ve y testearla en la práctica: para eso creé este skill.
 
-Para resolver esto, creé **`idea-to-business` (I2B)**: un *skill* de workflow agéntico open-source diseñado para ejecutar sistemáticamente todo el pipeline de creación de empresas dentro de tu entorno de trabajo de IA.
+**`idea-to-business` (I2B)** es un workflow agéntico ('skill') open-source diseñado para ejecutar sistemáticamente todo el pipeline de creación de empresas dentro de tu entorno de trabajo de IA.
 
 ---
 
@@ -110,6 +111,7 @@ El workflow completo es open source y está disponible desde hoy. Puedes copiar 
 * Explora el repositorio en GitHub: [pperezh/idea-to-business](https://github.com/pperezh/idea-to-business)
 
 ### 🔮 ¿Qué viene a continuación?
+
 Si te parece potente validar ideas de negocio de forma agéntica, mantente atento: **¡pronto vendrá `idea-to-paper`!**
 
 `idea-to-paper` aplicará este mismo enfoque agéntico basado en máquinas de estado al ámbito de la investigación académica, ayudando a científicos y desarrolladores a transformar hipótesis iniciales y datos experimentales en manuscritos listos para publicación.

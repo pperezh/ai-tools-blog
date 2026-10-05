@@ -1,0 +1,56 @@
+<script>
+  (() => {
+    const panel = document.querySelector('.blog-article-layout__toc')
+    if (!panel) return
+
+    const links = [...panel.querySelectorAll('a[href^="#"]')]
+    const sections = [...new Set(links.map((link) => {
+      const id = decodeURIComponent(link.getAttribute('href').slice(1))
+      return document.getElementById(id)
+    }).filter(Boolean))]
+    if (!sections.length) return
+
+    let scheduled = false
+    const updateActiveSection = () => {
+      const activationLine = Math.min(180, window.innerHeight * 0.33)
+      let activeSection = sections[0]
+
+      for (const section of sections) {
+        if (section.getBoundingClientRect().top <= activationLine) {
+          activeSection = section
+        } else {
+          break
+        }
+      }
+
+      if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) {
+        activeSection = sections[sections.length - 1]
+      }
+
+      links.forEach((link) => {
+        const id = decodeURIComponent(link.getAttribute('href').slice(1))
+        const isActive = id === activeSection.id
+        link.classList.toggle('active', isActive)
+        if (isActive) {
+          link.setAttribute('aria-current', 'location')
+        } else {
+          link.removeAttribute('aria-current')
+        }
+      })
+    }
+
+    const scheduleUpdate = () => {
+      if (scheduled) return
+      scheduled = true
+      window.requestAnimationFrame(() => {
+        updateActiveSection()
+        scheduled = false
+      })
+    }
+
+    window.addEventListener('scroll', scheduleUpdate, { passive: true })
+    window.addEventListener('resize', scheduleUpdate)
+    window.addEventListener('hashchange', scheduleUpdate)
+    updateActiveSection()
+  })()
+</script>

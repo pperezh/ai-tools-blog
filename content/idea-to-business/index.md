@@ -1,15 +1,16 @@
 ---
-title: "From Raw Concept to Launch-Ready Venture: The Idea-to-Business Agentic Workflow"
+title: "A 'Skill' to Sketch Out Your New Business Idea"
 date: 2026-08-13
-description: "How an agentic state machine systematically takes a business idea through market segmentation, GTM strategy, brand design, pitch deck generation, and Next.js website deployment."
-tags: ["AI", "Agents", "Workflows", "Startup", "Business"]
+description: "Simply use this 'skill' and you'll get a first solid baseline for any business idea across market segmentation, GTM strategy, brand identity, pitch deck, and a Next.js website."
+tags: ["AI", "Agents", "Workflows", "Startups", "Business"]
+sidebarGroup: "concepts"
 ---
 
-Turning a raw idea into a launch-ready business venture typically requires weeks of fragmented work. You need to identify target customer segments, analyze competitors, craft a Go-To-Market (GTM) strategy, establish a visual brand identity, design a compelling pitch deck, and build a modern web presence. 
+Turning a raw idea into a launch-ready business venture typically requires weeks of fragmented work. You need to identify target customer segments, analyze competitors, craft a Go-To-Market (GTM) strategy, establish a visual brand identity, design a compelling pitch deck, and build a modern web presence.
 
-While AI models excel at generating isolated strategy documents or code snippets, unstructured prompting often leads to generic output, broken design tokens, and placeholder text. 
+If you have an idea, want to get started right away, see immediately what it looks like, and test it in practice: that's why I created this skill.
 
-To bridge this gap, I built **`idea-to-business` (I2B)**—an open-source, agentic workflow skill designed to systematically execute the entire venture creation pipeline inside your AI workspace.
+**`idea-to-business` (I2B)** is an open-source agentic workflow ('skill') designed to systematically execute the entire venture creation pipeline inside your AI workspace.
 
 ---
 
@@ -105,12 +106,13 @@ The workflow operates under strict **Dynamic Workspace Isolation**, creating a d
 
 ## 🚀 Get Started & What's Coming Next
 
-The entire workflow skill is open source and available today. You can copy the skill instructions into your favorite AI tool and turn your next idea into a launch-ready business in minutes.
+The entire workflow skill is open source and available today. You can copy the skill instructions into your favorite AI tool and turn your next idea into a validated business in minutes.
 
 * Explore the GitHub repository: [pperezh/idea-to-business](https://github.com/pperezh/idea-to-business)
 
 ### 🔮 What's Next?
-If you find automated business validation powerful, stay tuned: **`idea-to-paper` is coming soon!** 
+
+If you find validating business ideas with agents powerful, stay tuned: **`idea-to-paper` is coming soon!**
 
 `idea-to-paper` will bring the same structured, multi-phase state machine approach to academic research—helping scientists and developers turn raw hypotheses and experimental data into publication-ready manuscripts.
 

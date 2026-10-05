@@ -3,6 +3,7 @@ title: "AI jargon: don't get lost, get it right!"
 date: 2026-06-04
 description: "Why switching models isn't enough: separating the model, the agent, and the skill to build a coherent multi-tool AI workflow."
 tags: ["AI", "productivity", "workflows", "jargon"]
+sidebarGroup: "concepts"
 ---
 The AI space is moving fast, and it's quite hard to keep up with all the new vocabulary. A few months ago I started using multiple AI tools simultaneously — Claude Code for coding work, OpenCode in the terminal, Cowork for file tasks, Antigravity for web pages. What I noticed quickly is that the same concepts get different names depending on who built the tool, and people use "model", "agent", and "AI" interchangeably in ways that create real confusion when you try to set up a coherent workflow.
 

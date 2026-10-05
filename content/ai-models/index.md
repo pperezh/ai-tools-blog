@@ -3,6 +3,7 @@ title: "Beyond the Default AI Model"
 date: 2026-05-27
 description: "An interactive field guide to the modern AI landscape, outlining why relying on a single model is a workflow limitation and mapping out key labs, models, and interfaces."
 tags: ["AI", "models", "workflow"]
+sidebarGroup: "tools"
 ---
 
 AI models are evolving at a pace that is genuinely hard to keep up with. Every few weeks, a new model tops a benchmark, a new interface ships, and the previous "best option" quietly steps aside. More importantly, different models are now excelling at very different tasks, writing, coding, math, image generation, cost efficiency, which means that relying on a single model is increasingly a limitation, not a workflow.

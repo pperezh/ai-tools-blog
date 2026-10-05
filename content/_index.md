@@ -1,13 +1,22 @@
 ---
 title: "AI Tools"
-description: "Curated reviews and comparisons of AI tools for research workflows."
-layout: "list"
+description: "Guides to AI tools, models, and workflows for research, data science, and mathematical modeling."
 cardView: true
 groupByYear: false
+blogLabel: "Blog"
+allArticlesLabel: "All articles"
+articlesLabel: "Articles"
+contentsLabel: "On this page"
+overviewLabel: "Overview"
+articleGroups:
+  - key: "tools"
+    title: "Tools"
+  - key: "concepts"
+    title: "Concepts"
 cascade:
   showDate: true
   showAuthor: false
   showSummary: true
 ---
 
-Life science, data science, and mathematical modeling are so much more entertaining with the new AI tools available today. Here is a brief guide to what is out there and how you can use it to improve your science — from searching the literature to writing, analyzing, and visualizing your results.
+Explore practical ways to use AI for literature discovery, writing, analysis, and visualization across the life sciences, data science, and mathematical modeling.

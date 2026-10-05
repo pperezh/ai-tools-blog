@@ -3,6 +3,7 @@ title: "Escribe la configuración de tus agentes una vez, enlázala en todas par
 date: 2026-06-10
 description: "Cómo centralizar tus archivos de instrucciones globales, habilidades personalizadas y agentes usando una estructura de carpetas agnóstica a la herramienta y enlaces simbólicos."
 tags: ["AI", "productivity", "workflows", "setup"]
+sidebarGroup: "concepts"
 ---
 La eficiencia de las herramientas de IA depende del contexto que les proporcionamos. En particular, el modelo debería poder leer al menos: **1) instrucciones globales (`AGENTS.md`), 2) instrucciones/habilidades personalizadas (carpeta `skills/`), y 3) personalidades/agentes (carpeta `agents/`)**. Algunos repositorios de habilidades y agentes disponibles públicamente son excelentes; sin embargo, en el mundo de la IA, parece haber un consenso entre los usuarios de que los mejores resultados provienen de **crear estos archivos manualmente con cuidado**. Por lo tanto, la gestión de estos archivos a través de diferentes modelos se ha convertido en un aspecto clave para mantener un flujo de trabajo verdaderamente independiente del modelo (model-agnostic).
 
